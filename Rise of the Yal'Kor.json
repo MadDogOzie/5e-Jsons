@@ -1,1 +1,16 @@
-Test
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "RiseoftheYalKor",
+				"abbreviation": "RotYK",
+				"full": "Rise of the Yal'Kor",
+				"url": "https://raw.githubusercontent.com/MadDogOzie/5e-Jsons/main/Rise%20of%20the%20Yal'Kor.json",
+				"authors": [
+					"Austin McGrath"
+				],
+				"convertedBy": []
+			}
+		]
+	}
+}
