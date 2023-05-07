@@ -110,6 +110,125 @@
 			"environment": [
 				"mountain"
 			]
+		},
+		{
+			"uniqueId": "8eb88ff5-d973-44c1-924c-906c39e36302",
+			"name": "Undead Yak",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 9,
+			"cha": 5,
+			"passive": 11,
+			"cr": "3",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+1"
+			},
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the undead yak to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead yak drops to 1 hit point instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The undead yak makes two attacks: one with its bite and one with its hooves."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Terrifying Bellow {@recharge 5}",
+					"entries": [
+						"he undead yak emits a haunting bellow. Each creature of the undead yak's choice within 30 feet that can hear it must succeed on a {@dc 12} Wisdom saving throw or become {@condition frightened} for 1 minute. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"environment": [
+				"mountain"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1104856808868290640/Undead_Yak.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1104856809140912138/Undead_Yak.jpg"
+						}
+					}
+				]
+			}
 		}
 	]
 }
