@@ -12,5 +12,104 @@
 				"convertedBy": []
 			}
 		]
-	}
+	},
+	"monster": [
+		{
+			"uniqueId": "d6a677bf-2b8c-4b36-a06a-70f7b48a021d",
+			"name": "Zhar'Dak Snow Leopard",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "5d10 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 14,
+			"int": 3,
+			"wis": 12,
+			"cha": 8,
+			"passive": 13,
+			"cr": "1",
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1104722923119452220/ZharDak_Snow_Leopard.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1104722923396288572/ZharDak_Snow_Leopard.jpeg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The leopard has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the leopard moves at least 20 feet straight toward a creature and then hits it with a horns attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the leopard can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge",
+				"Keen Senses"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Horns",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"environment": [
+				"mountain"
+			]
+		}
+	]
 }
