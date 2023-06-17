@@ -229,6 +229,106 @@
 					}
 				]
 			}
+		},
+		{
+			"uniqueId": "3f424535-ff6f-41c1-8fd8-291a587876f5",
+			"name": "Yal'Kor Scout",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					],
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": 13,
+			"cr": "1/2",
+			"languages": [
+				"Common",
+				"Yal'Kor"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+5",
+				"perception": "+3"
+			},
+			"action": [
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"RNG"
+			],
+			"bonus": [
+				{
+					"name": "Rapid Retreat",
+					"entries": [
+						"As a bonus action, the scout can command its war horse to disengage from combat without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Mounted Assault",
+					"entries": [
+						"Once per turn, if the scout moves at least 20 feet in a straight line toward a target, it gains advantage on its next ranged attack roll against that target."
+					]
+				},
+				{
+					"name": "Swift Shot",
+					"entries": [
+						"If the scout uses its bonus action to disengage, it can make a ranged attack against a different target within its longbow's range without disadvantage."
+					]
+				},
+				{
+					"name": "Coordinated Assault",
+					"entries": [
+						"If both scouts target the same creature with ranged attacks on the same turn, they gain a +2 bonus to their attack rolls against that creature."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015306911855/Scout_Riders.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015566950440/Scout_Riders_-_Rider.png"
 		}
 	]
 }
