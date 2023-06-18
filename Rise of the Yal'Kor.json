@@ -527,6 +527,92 @@
 			"conditionInflict": [
 				"prone"
 			]
+		},
+		{
+			"uniqueId": "9f998842-1d13-4f44-af25-37627668e2f7",
+			"name": "Ghost Yak Herd",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "L"
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "8d8",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/2",
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1120029699960221696/token_1_1.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1120029699482062969/db40f4e3-cd6f-4594-8781-0a70749a860d.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Any that summoner knows"
+			],
+			"save": {
+				"str": "+16",
+				"dex": "+10",
+				"con": "+16",
+				"int": "+2",
+				"wis": "+10",
+				"cha": "+5"
+			},
+			"skill": {
+				"perception": "+2"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"poison",
+				"slashing"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Stampede",
+					"entries": [
+						"The herd of ghost yaks charges in a straight line up to 90 feet, moving like a rook in chess, only up and down. Each creature in its path must make a {@dc 12} Dexterity saving throw or take {@damage 3d6} bludgeoning damage and be knocked {@condition prone}. On a successful save, the creature takes half damage and isn't knocked {@condition prone}."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			]
 		}
 	]
 }
