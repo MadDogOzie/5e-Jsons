@@ -898,6 +898,176 @@
 			"conditionInflict": [
 				"prone"
 			]
+		},
+		{
+			"uniqueId": "a3b0460d-f390-41c8-b079-02b0776607d4",
+			"name": "The Heavenly Yak-Suspended Behemoth",
+			"size": [
+				"G"
+			],
+			"type": "construct",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"(natural armor)"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d20 + 192",
+				"average": 402
+			},
+			"speed": {
+				"walk": {
+					"number": 20,
+					"condition": "(ground)"
+				},
+				"fly": {
+					"number": 60,
+					"condition": "(flight)"
+				}
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 22,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"passive": 18,
+			"cr": "15",
+			"shortName": "Behemoth",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"and telepathy 120 ft."
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"save": {
+				"dex": "+5",
+				"con": "+11",
+				"wis": "+8"
+			},
+			"skill": {
+				"perception": "+8"
+			},
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Sentient Balloon",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth is a sentient creature with a wise and compassionate personality. It can communicate telepathically with any creature within 120 feet that understands Common."
+					]
+				},
+				{
+					"name": "Moral Highground",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth always advocates for moral conduct and fairness. It encourages peaceful resolutions and disapproves of unnecessary violence."
+					]
+				},
+				{
+					"name": "Airship Hull",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth possesses the durable construction of an airship, giving it resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks."
+					]
+				},
+				{
+					"name": "Passivefist",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth primarily seeks to avoid combat, but it can defend itself if provoked. It takes no aggressive actions unless attacked first or its passengers are in immediate danger."
+					]
+				}
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical attacks.",
+					"cond": true
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reactive Defense",
+					"entries": [
+						"When the Heavenly Yak-Suspended Behemoth is targeted by an attack, it can use its reaction to gain a +5 bonus to its AC against that attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Battering Slam",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}25 ({@damage 4d8 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Air Gust {@recharge 5}",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth unleashes a powerful gust of air in a 60-foot cone. Each creature in that area must make a {@dc 18} Strength saving throw, taking 27 ({@damage 6d8}) bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, a creature that fails the save is pushed back 20 feet and knocked {@condition prone}."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"charmed",
+				"prone"
+			],
+			"legendaryHeader": [
+				"The Heavenly Yak-Suspended Behemoth can take 3 legendary actions, choosing from the options below. It can take only one legendary action at a time and only at the end of another creature's turn. It regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Slam Attack",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth makes a Battering Slam attack."
+					]
+				},
+				{
+					"name": "Moral Lecture",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth lectures a creature it can see within 120 feet, forcing it to make a {@dc 18} Wisdom saving throw. On a failed save, the target is {@condition charmed} by the Heavenly Yak-Suspended Behemoth and cannot take aggressive actions for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Lift Off (Costs 2 Actions)",
+					"entries": [
+						"The Heavenly Yak-Suspended Behemoth rises 120 feet into the air and remains hovering until the start of its next turn. While hovering, it gains a +5 bonus to AC against melee attacks, has advantage on Dexterity saving throws, and its Air Gust attack's range increases to 120 feet"
+					]
+				}
+			]
 		}
 	]
 }
