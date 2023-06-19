@@ -15,7 +15,6 @@
 	},
 	"monster": [
 		{
-			"uniqueId": "d6a677bf-2b8c-4b36-a06a-70f7b48a021d",
 			"name": "Zhar'Dak Snow Leopard",
 			"size": [
 				"L"
@@ -109,10 +108,10 @@
 			],
 			"environment": [
 				"mountain"
-			]
+			],
+			"uniqueId": "02953f35-afe0-4da2-a8c9-041b18f60483"
 		},
 		{
-			"uniqueId": "8eb88ff5-d973-44c1-924c-906c39e36302",
 			"name": "Undead Yak",
 			"size": [
 				"L"
@@ -228,10 +227,10 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "fe30454d-2b75-4d9d-9a55-e6d567a89255"
 		},
 		{
-			"uniqueId": "3f424535-ff6f-41c1-8fd8-291a587876f5",
 			"name": "Yal'Kor Scout",
 			"size": [
 				"M"
@@ -328,10 +327,10 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015566950440/Scout_Riders_-_Rider.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015566950440/Scout_Riders_-_Rider.png",
+			"uniqueId": "d86424b8-793c-44e8-bdc7-3b025f1b88a8"
 		},
 		{
-			"uniqueId": "4cf1fad5-ae30-4c20-821f-1a872320a2b7",
 			"name": "Yal'Kor Skeleton Archer",
 			"size": [
 				"M"
@@ -416,10 +415,10 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "84128b1d-72e5-4570-b161-ed3289db2307"
 		},
 		{
-			"uniqueId": "65360bbc-5db0-4d68-ada5-aebcc34888f7",
 			"name": "Yal'Kor Skeleton Guard",
 			"size": [
 				"M"
@@ -526,18 +525,195 @@
 			],
 			"conditionInflict": [
 				"prone"
-			]
+			],
+			"uniqueId": "5ec445a3-a476-4726-b702-9b881b1809b1"
 		},
 		{
-			"uniqueId": "9f998842-1d13-4f44-af25-37627668e2f7",
-			"name": "Ghost Yak Herd",
+			"uniqueId": "a732afa8-293e-4dae-9f8a-06cf37548601",
+			"name": "Durak the Undying",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 14,
+			"int": 12,
+			"wis": 13,
+			"cha": 15,
+			"passive": 11,
+			"cr": "1",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Yal'Kor"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"wis": "+3",
+				"cha": "+4"
+			},
+			"resist": [
+				"acid",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the ghost has disadvantage on attack rolls, as well as Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Incorporeal Touch",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"legendaryHeader": [
+				"The ghost can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The ghost regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Ghostly Visage",
+					"entries": [
+						"The ghost becomes {@condition invisible} until the start of its next turn."
+					]
+				},
+				{
+					"name": "Teleportation",
+					"entries": [
+						"The ghost magically teleports up to 30 feet to an unoccupied space it can see."
+					]
+				},
+				{
+					"name": "Gust of Wind",
+					"entries": [
+						"The ghost creates a strong gust of wind in a 30-foot line that is 5 feet wide. Each creature in that line must make a {@dc 12} Strength saving throw or be pushed 15 feet away from the ghost."
+					]
+				},
+				{
+					"name": "Spectral Grasp",
+					"entries": [
+						"The ghost reaches out with spectral tendrils, targeting a creature within 30 feet. The target must make a {@dc 12} Strength saving throw or be pulled up to 15 feet towards the ghost."
+					]
+				}
+			],
+			"mythicHeader": [
+				"Lair Actions: On initiative count 20 (losing initiative ties), the ghost can take a lair action to create the following effects. The ghost can't use the same effect two rounds in a row:"
+			],
+			"mythic": [
+				{
+					"name": "Spectral Howl",
+					"entries": [
+						"The ghost emits a haunting howl, summoning a swirling mist in a 30-foot radius centered on itself. Each creature within the area must succeed on a {@dc 12} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Ethereal Step",
+					"entries": [
+						"The ghost can immediately move up to their speed and pass through creatures and objects as if they were difficult terrain. This movement does not provoke opportunity attacks."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1120090059094380614/token_1_2.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1120090059320860714/c4848f13-25da-4359-8ed8-f0ed1438bc23.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"uniqueId": "ffae3691-db67-42d4-b00c-bd7bc5bdb64f",
+			"name": "Ghost Yak Stampede",
 			"size": [
 				"L"
 			],
-			"type": {
-				"type": "undead",
-				"swarmSize": "L"
-			},
+			"type": "undead",
 			"source": "RiseoftheYalKor",
 			"alignment": [
 				"N"
@@ -546,20 +722,70 @@
 				12
 			],
 			"hp": {
-				"formula": "8d8",
-				"average": 36
+				"formula": "4d10 + 8",
+				"average": 30
 			},
 			"speed": {
-				"walk": 30
+				"walk": {
+					"number": 60,
+					"condition": "Only vertically and horizontally"
+				}
 			},
-			"str": 10,
-			"dex": 10,
-			"con": 10,
-			"int": 10,
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
 			"wis": 10,
-			"cha": 10,
-			"passive": 12,
+			"cha": 5,
+			"passive": 10,
 			"cr": "1/2",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Understands Common and Yal'Kor but can't speak"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Ghostly Extension",
+					"entries": [
+						"The ghost yaks are an extension of the Ghostly Nomad. As long as the Ghostly Nomad is alive, the ghost yaks cannot be killed. If reduced to 0 hit points, any further damage to the ghost yak is dealt to its owner."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Stampede",
+					"entries": [
+						"The yak moves up to 60 feet in a straight line and passes through creatures. Each creature in its path must make a {@dc 12} Dexterity saving throw, taking 5 ({@damage 1d10}) bludgeoning damage and being knocked {@condition prone} on a failed save, or half damage and not being knocked {@condition prone} on a successful one."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
 			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1120029699960221696/token_1_1.png",
 			"fluff": {
 				"images": [
@@ -571,48 +797,7 @@
 						}
 					}
 				]
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"D"
-			],
-			"languages": [
-				"Any that summoner knows"
-			],
-			"save": {
-				"str": "+16",
-				"dex": "+10",
-				"con": "+16",
-				"int": "+2",
-				"wis": "+10",
-				"cha": "+5"
-			},
-			"skill": {
-				"perception": "+2"
-			},
-			"resist": [
-				"bludgeoning",
-				"piercing",
-				"poison",
-				"slashing"
-			],
-			"conditionImmune": [
-				"exhaustion",
-				"poisoned"
-			],
-			"action": [
-				{
-					"name": "Stampede",
-					"entries": [
-						"The herd of ghost yaks charges in a straight line up to 90 feet, moving like a rook in chess, only up and down. Each creature in its path must make a {@dc 12} Dexterity saving throw or take {@damage 3d6} bludgeoning damage and be knocked {@condition prone}. On a successful save, the creature takes half damage and isn't knocked {@condition prone}."
-					]
-				}
-			],
-			"conditionInflict": [
-				"prone"
-			]
+			}
 		}
 	]
 }
