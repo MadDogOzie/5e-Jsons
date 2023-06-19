@@ -798,6 +798,106 @@
 					}
 				]
 			}
+		},
+		{
+			"uniqueId": "a1331f8f-448a-4a6a-9a9c-e36afd1423e8",
+			"name": "Spectral Yak",
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 8",
+				"average": 30
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 2,
+			"wis": 11,
+			"cha": 6,
+			"passive": 12,
+			"cr": "1",
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1120347225277607936/Spectral_Yak.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1120347225587974205/Spectral_Yak.jpeg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Understands the languages of its summoner but can't speak."
+			],
+			"languageTags": [
+				"CS"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks.",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"action": [
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the spectral yak moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 ({@damage 1d10}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
 		}
 	]
 }
