@@ -1067,7 +1067,19 @@
 						"The Heavenly Yak-Suspended Behemoth rises 120 feet into the air and remains hovering until the start of its next turn. While hovering, it gains a +5 bonus to AC against melee attacks, has advantage on Dexterity saving throws, and its Air Gust attack's range increases to 120 feet"
 					]
 				}
-			]
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1120360385988542464/The_Heavenly_Yak-Suspended_Behemoth.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1120360386261176320/The_Heavenly_Yak-Suspended_Behemoth.jpeg"
+						}
+					}
+				]
+			}
 		}
 	]
 }
