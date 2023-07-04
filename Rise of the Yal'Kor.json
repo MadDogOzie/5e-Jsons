@@ -15,6 +15,100 @@
 	},
 	"monster": [
 		{
+			"uniqueId": "4ba69898-c47d-4862-b7f8-d3ad11328a6b",
+			"name": "Durak's Undying Minion",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "1d4 - 1",
+				"average": 1
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 9,
+			"int": 4,
+			"wis": 6,
+			"cha": 3,
+			"passive": 8,
+			"cr": "1/4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Understands the languages it knew in life but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Swarming Attack",
+					"entries": [
+						"The minion gains a +2 bonus to its attack roll if at least two other minions are within 5 feet of the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Call of the Undying",
+					"entries": [
+						"The minion lets out a chilling howl, summoning reinforcements from the depths of the ethereal plane. As an action, the minion can use this ability. Until the start of its next turn, if the minion takes damage and drops to 0 hit points, it immediately explodes in a burst of necrotic energy. Each creature within 5 feet of the minion must make a {@dc 10} Dexterity saving throw, taking 2 ({@damage 1d4}) necrotic damage on a failed save, or half as much damage on a successful one. If the minion dies before the start of its next turn after using this ability, {@dice 1d4} additional minions appear in unoccupied spaces within 10 feet of its corpse. These new minions have the same statistics as the original minion and act immediately after it in the initiative order."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6+2}) necrotic damage."
+					]
+				}
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1125751121009455114/Duraks_Undying_Minion.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1125751121365966979/Duraks_Undying_Minion.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Zhar'Dak Snow Leopard",
 			"size": [
 				"L"
