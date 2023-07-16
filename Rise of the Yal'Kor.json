@@ -15,7 +15,6 @@
 	},
 	"monster": [
 		{
-			"uniqueId": "4ba69898-c47d-4862-b7f8-d3ad11328a6b",
 			"name": "Durak's Undying Minion",
 			"size": [
 				"M"
@@ -202,8 +201,7 @@
 			],
 			"environment": [
 				"mountain"
-			],
-			"uniqueId": "02953f35-afe0-4da2-a8c9-041b18f60483"
+			]
 		},
 		{
 			"name": "Undead Yak",
@@ -321,8 +319,7 @@
 						}
 					}
 				]
-			},
-			"uniqueId": "fe30454d-2b75-4d9d-9a55-e6d567a89255"
+			}
 		},
 		{
 			"name": "Yal'Kor Scout",
@@ -421,8 +418,7 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015566950440/Scout_Riders_-_Rider.png",
-			"uniqueId": "d86424b8-793c-44e8-bdc7-3b025f1b88a8"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015566950440/Scout_Riders_-_Rider.png"
 		},
 		{
 			"name": "Yal'Kor Skeleton Archer",
@@ -509,8 +505,7 @@
 						}
 					}
 				]
-			},
-			"uniqueId": "84128b1d-72e5-4570-b161-ed3289db2307"
+			}
 		},
 		{
 			"name": "Yal'Kor Skeleton Guard",
@@ -619,11 +614,9 @@
 			],
 			"conditionInflict": [
 				"prone"
-			],
-			"uniqueId": "5ec445a3-a476-4726-b702-9b881b1809b1"
+			]
 		},
 		{
-			"uniqueId": "a732afa8-293e-4dae-9f8a-06cf37548601",
 			"name": "Durak the Undying",
 			"size": [
 				"M"
@@ -802,7 +795,6 @@
 			}
 		},
 		{
-			"uniqueId": "ffae3691-db67-42d4-b00c-bd7bc5bdb64f",
 			"name": "Ghost Yak Stampede",
 			"size": [
 				"L"
@@ -894,7 +886,6 @@
 			}
 		},
 		{
-			"uniqueId": "a1331f8f-448a-4a6a-9a9c-e36afd1423e8",
 			"name": "Spectral Yak",
 			"size": [
 				"L"
@@ -994,136 +985,562 @@
 			]
 		},
 		{
-			"uniqueId": "a3b0460d-f390-41c8-b079-02b0776607d4",
-			"name": "The Heavenly Yak-Suspended Behemoth",
+			"name": "Yakstronaut",
 			"size": [
-				"G"
+				"H"
 			],
-			"type": "construct",
+			"type": {
+				"type": "beast",
+				"note": "(yak)"
+			},
 			"source": "RiseoftheYalKor",
 			"alignment": [
-				"L",
-				"G"
+				"U"
 			],
 			"ac": [
 				{
-					"ac": 18,
+					"ac": 16,
 					"from": [
-						"(natural armor)"
+						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"formula": "20d20 + 192",
-				"average": 402
+				"formula": "12d12 + 48",
+				"average": 126
 			},
 			"speed": {
-				"walk": {
-					"number": 20,
-					"condition": "(ground)"
-				},
+				"walk": 40,
 				"fly": {
-					"number": 60,
-					"condition": "(flight)"
-				}
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
 			},
-			"str": 24,
-			"dex": 10,
-			"con": 22,
-			"int": 14,
-			"wis": 16,
-			"cha": 18,
-			"passive": 18,
-			"cr": "15",
-			"shortName": "Behemoth",
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"senseTags": [
-				"SD"
-			],
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"passive": 14,
+			"cr": "6",
 			"languages": [
 				"Common",
-				"and telepathy 120 ft."
+				"Yal'Korin"
 			],
 			"languageTags": [
-				"C",
-				"TP"
+				"C"
 			],
-			"save": {
-				"dex": "+5",
-				"con": "+11",
-				"wis": "+8"
-			},
 			"skill": {
-				"perception": "+8"
+				"perception": "+4"
 			},
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"poisoned"
-			],
 			"trait": [
 				{
-					"name": "Sentient Balloon",
+					"name": "Giant Transport",
 					"entries": [
-						"The Heavenly Yak-Suspended Behemoth is a sentient creature with a wise and compassionate personality. It can communicate telepathically with any creature within 120 feet that understands Common."
+						"The Yakstronaut has a large open cockpit on its back, capable of carrying up to 6 Medium creatures. The riders in the cockpit have half cover against ranged attacks and gain advantage on Dexterity saving throws against area effects targeting the Yakstronaut. Additionally, while in the cockpit, riders can use their action to make ranged weapon attacks with bows, crossbows, or similar weapons."
 					]
 				},
 				{
-					"name": "Moral Highground",
+					"name": "Keen Senses",
 					"entries": [
-						"The Heavenly Yak-Suspended Behemoth always advocates for moral conduct and fairness. It encourages peaceful resolutions and disapproves of unnecessary violence."
-					]
-				},
-				{
-					"name": "Airship Hull",
-					"entries": [
-						"The Heavenly Yak-Suspended Behemoth possesses the durable construction of an airship, giving it resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks."
-					]
-				},
-				{
-					"name": "Passivefist",
-					"entries": [
-						"The Heavenly Yak-Suspended Behemoth primarily seeks to avoid combat, but it can defend itself if provoked. It takes no aggressive actions unless attacked first or its passengers are in immediate danger."
+						"The Yakstronaut has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell."
 					]
 				}
 			],
-			"resist": [
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
 				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "damage from nonmagical attacks.",
-					"cond": true
+					"name": "Trampling Charge",
+					"entries": [
+						"If the Yakstronaut moves at least 20 feet straight toward a creature and then hits it with a ram attack on the same turn, the target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the Yakstronaut can make one stomp attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Flyby Attack",
+					"entries": [
+						"The Yakstronaut moves without provoking opportunity attacks."
+					]
 				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"entries": [
+					"Born from a whimsical fusion of nature and invention, the Yakstronaut defies conventional expectations with its awe-inspiring presence. Towering over its surroundings, this living giant yak stands as a testament to the boundless imagination of its creator.",
+					"Its massive frame is adorned with a sturdy cockpit, a testament to the resourcefulness of those who seek to explore new frontiers. Within the protective embrace of the cockpit, adventurers find refuge, their movements guided by the gentle swaying of the Yakstronaut's powerful gait.",
+					"Atop its broad back rests a fantastical hot air balloon, a marvel of engineering and ingenuity. Fueled by the wind's whispers and the spirit of adventure, the balloon carries the Yakstronaut and its passengers high above the mundane world. From this vantage point, the party surveys the battlefield, strategizing and planning their maneuvers.",
+					"Beneath the Yakstronaut's rugged exterior lies a gentle spirit, its eyes gleaming with wisdom and its heart brimming with loyalty. This extraordinary creature exudes an air of tranquility, its rhythmic steps and gentle huffs resonating with a sense of reassurance.",
+					"As the Yakstronaut navigates the skies and land, its companions bear witness to a bond forged between nature and invention. Together, they soar through clouds and glide over valleys, a harmonious fusion of ancient strength and modern invention.",
+					"Within the cockpit, laughter mingles with the hum of gears, and the twang of bowstrings accompanies the rhythmic flapping of the hot air balloon. In the presence of the Yakstronaut, the possibilities seem endless, and the boundaries of the world grow ever smaller.",
+					"Embrace the Yakstronaut's embrace, adventurers, and let your spirits take flight upon its noble frame. Discover new horizons, forge unbreakable bonds, and revel in the wondrous tales that will forever be woven in the tapestry of your shared destiny."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149729037193337/Yakstronaut.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149731050467459/Yakstronaut.png"
+		},
+		{
+			"name": "Refugee (Yal'Kor)",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Yal'Kor)"
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"passive": 13,
+			"cr": "3",
+			"languages": [
+				"Yal'Korin"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+2"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Yal'Kor Refugee makes two attacks: one with its shortsword and one with its horn thrust."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) damage."
+					]
+				},
+				{
+					"name": "Horn Thrust",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) damage. If the target is surprised, the attack deals an additional 4 ({@damage 1d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Commanding Presence",
+					"entries": [
+						"The Yal'Kor Refugee has advantage on Charisma (Intimidation) checks against creatures that have witnessed its Yak Transformation ability."
+					]
+				},
+				{
+					"name": "Yak Transformation",
+					"entries": [
+						"As a bonus action, the Yal'Kor Refugee can become indistinguishable from a group of yaks until the start of its next turn. While transformed, it gains advantage on Stealth checks."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, when the Yal'Kor Refugee hits a target with a melee attack and has advantage on the attack roll, it can deal an extra 7 ({@damage 2d6}) damage."
+					]
+				},
+				{
+					"name": "Tactical Retreat",
+					"entries": [
+						"As a reaction when an enemy ends its turn within 5 feet of the Yal'Kor Refugee, it can move up to half its movement speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"fluff": {
+				"entries": [
+					"Yal'Kor Refugees, cunning survivors of a war-torn land, blend into the landscape by disguising themselves as yaks. Their transformation ability allows them to disappear into a herd, granting them an advantage in stealth. They utilize their strategic positioning and command of the battlefield to gain the upper hand in combat. With their horns and quick reflexes, they strike swiftly and precisely, taking advantage of surprise attacks whenever possible. Their presence on the battlefield can be intimidating, and they are skilled at exploiting moments of opportunity to tactically retreat or reposition themselves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149728122835075/YalKor_Refugees.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149729867673700/YalKor_Refugees.png",
+			"trait": [
+				{
+					"name": "Group Token",
+					"entries": [
+						"The Yal'Kor Refugee function as a group token, representing 5 Yal'Kor Refugee. This allows them to act simultaneously and simplifies the turn order and battle map."
+					]
+				}
+			]
+		},
+		{
+			"name": "Townsfolk (Yal'Kor)",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Yal'Kor)"
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"Constitution Modifier"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 15",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 16,
+			"int": 8,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Group Token",
+					"entries": [
+						"The Yal'Kor Townsfolk function as a group token, representing 5 townsfolk. This allows them to act simultaneously and simplifies the turn order and battle map."
+					]
+				},
+				{
+					"name": "Horned Charge",
+					"entries": [
+						"When the Yal'Kor Townsfolk move at least 20 feet straight toward a target and then hit it with a melee weapon attack on the same turn, the target takes an extra 4 ({@damage 1d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Resilient Nomads",
+					"entries": [
+						"The Yal'Kor Townsfolk have advantage on saving throws against {@condition exhaustion} and resistance to cold damage."
+					]
+				},
+				{
+					"name": "Tribal Assault",
+					"entries": [
+						"When at least one ally is within 10 feet of a Yal'Kor Townsfolk group token, it gains a +2 bonus to attack rolls and damage rolls."
+					]
+				},
+				{
+					"name": "Tribal Resilience",
+					"entries": [
+						"When at least two allies are within 20 feet of a Yal'Kor Townsfolk group token, they have advantage on saving throws against all conditions and resistance to all damage types."
+					]
+				},
+				{
+					"name": "Tribal Coordination",
+					"entries": [
+						"When at least three allies are within 30 feet of a Yal'Kor Townsfolk group token, they can use their Horned Charge ability even if they have moved less than 20 feet."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"languages": [
+				"Yal'Korin"
+			],
+			"skill": {
+				"perception": "+2",
+				"survival": "+2"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Yal'Kor Townsfolk make two melee attacks."
+					]
+				},
+				{
+					"name": "Melee Attack",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
 			],
 			"reaction": [
 				{
-					"name": "Reactive Defense",
+					"name": "Rallying Cry",
 					"entries": [
-						"When the Heavenly Yak-Suspended Behemoth is targeted by an attack, it can use its reaction to gain a +5 bonus to its AC against that attack."
+						"When an ally within 10 feet of a Yal'Kor Townsfolk is reduced to 0 hit points but not killed outright, the Yal'Kor Townsfolk gain temporary hit points equal to the damage dealt to the fallen ally. These temporary hit points last until the end of their next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149730266124288/YalKor_-_Townsfolk.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149728366100510/YalKor_-_Townsfolk.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Scout Trio (Yal'Kor)",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Yal'Kor)"
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "12d8 + 12",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": 13,
+			"cr": "2",
+			"languages": [
+				"Yal'Korin"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5",
+				"acrobatics": "+5",
+				"survival": "+3"
+			},
+			"trait": [
+				{
+					"name": "Group Token",
+					"entries": [
+						"The Yal'Kor Scout Trio functions as a group token, representing 3 Yal'Kor Scouts. This allows them to act simultaneously and simplifies the turn order and battle map."
+					]
+				},
+				{
+					"name": "Nomadic Riders",
+					"entries": [
+						"The Yal'Kor Scout Trio gains a +2 bonus to AC while mounted."
+					]
+				},
+				{
+					"name": "Nimble Maneuvers",
+					"entries": [
+						"The Yal'Kor Scout Trio can use their bonus actions to Dash, Disengage, or Hide."
+					]
+				},
+				{
+					"name": "Agile Evasion",
+					"entries": [
+						"When the Yal'Kor Scout Trio is targeted by a ranged attack, they can use their reaction to impose disadvantage on the attack roll."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Battering Slam",
+					"name": "Triple Attack",
 					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}25 ({@damage 4d8 + 7}) bludgeoning damage."
+						"The Yal'Kor Scout Trio makes three melee attacks, one for each member."
 					]
 				},
 				{
-					"name": "Air Gust {@recharge 5}",
+					"name": "Polearm",
 					"entries": [
-						"The Heavenly Yak-Suspended Behemoth unleashes a powerful gust of air in a 60-foot cone. Each creature in that area must make a {@dc 18} Strength saving throw, taking 27 ({@damage 6d8}) bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, a creature that fails the save is pushed back 20 feet and knocked {@condition prone}."
+						"{@atk mw} {@hit 3} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"reaction": [
+				{
+					"name": "Daring Flourish",
+					"entries": [
+						"When the Yal'Kor Scout Trio hits with all three polearm attacks against a target, they can use their reaction to make three additional dagger attacks against that target."
+					]
+				},
+				{
+					"name": "Skirmisher's Escape",
+					"entries": [
+						"When an enemy creature ends its turn within 5 feet of the Yal'Kor Scout Trio, they can use their reaction to move up to their movement speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Swift Retreat",
+					"entries": [
+						"When the Yal'Kor Scout Trio takes the Disengage action, their movement speed is doubled until the end of their turn."
+					]
+				}
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149729494368287/YalKor_-_Scout_Yak_Rider.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149727879573635/YalKor_-_Scout_Yak_Rider.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Shaman (Yal'Kor)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Yal'Kor)"
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 12,
+			"passive": 15,
+			"cr": "2",
+			"languages": [
+				"Yal'Korin"
+			],
+			"skill": {
+				"medicine": "+5",
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"trait": [
+				{
+					"name": "Spiritual Guidance",
+					"entries": [
+						"The Yal'Kor Shaman has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Healing Aura",
+					"entries": [
+						"At the start of its turn, the Yal'Kor Shaman can choose up to three creatures it can see within 10 feet of it. Each chosen creature regains hit points equal to {@dice 1d4} + the shaman's Wisdom modifier (3)"
+					]
+				},
+				{
+					"name": "Nomadic Mobility",
+					"entries": [
+						"The Yal'Kor Shaman's movement speed is not reduced by difficult terrain, and it can Dash as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff Strike",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
 					]
 				}
 			],
@@ -1131,49 +1548,232 @@
 				"B"
 			],
 			"miscTags": [
-				"MW",
-				"RCH",
-				"AOE"
+				"MW"
 			],
-			"conditionInflict": [
-				"charmed",
-				"prone"
-			],
-			"legendaryHeader": [
-				"The Heavenly Yak-Suspended Behemoth can take 3 legendary actions, choosing from the options below. It can take only one legendary action at a time and only at the end of another creature's turn. It regains spent legendary actions at the start of its turn."
-			],
-			"legendary": [
+			"spellcasting": [
 				{
-					"name": "Slam Attack",
-					"entries": [
-						"The Heavenly Yak-Suspended Behemoth makes a Battering Slam attack."
-					]
-				},
-				{
-					"name": "Moral Lecture",
-					"entries": [
-						"The Heavenly Yak-Suspended Behemoth lectures a creature it can see within 120 feet, forcing it to make a {@dc 18} Wisdom saving throw. On a failed save, the target is {@condition charmed} by the Heavenly Yak-Suspended Behemoth and cannot take aggressive actions for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
-					]
-				},
-				{
-					"name": "Lift Off (Costs 2 Actions)",
-					"entries": [
-						"The Heavenly Yak-Suspended Behemoth rises 120 feet into the air and remains hovering until the start of its next turn. While hovering, it gains a +5 bonus to AC against melee attacks, has advantage on Dexterity saving throws, and its Air Gust attack's range increases to 120 feet"
-					]
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Yal'Kor Shaman is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). The shaman has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell healing word}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell beacon of hope}",
+								"{@spell mass healing word}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
 				}
 			],
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1120360385988542464/The_Heavenly_Yak-Suspended_Behemoth.png",
+			"spellcastingTags": [
+				"CC"
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
 			"fluff": {
+				"entries": [
+					"The Yal'Kor Shaman moves with an ethereal grace, a conduit between the physical realm and the spiritual realm. Adorned in flowing robes and adorned with mystical symbols, the shaman carries a staff adorned with feathers, beads, and sacred objects. Their eyes gleam with ancient wisdom, reflecting the deep connection they have forged with the natural world.",
+					"Born from the nomadic traditions of the Yal'Kor people, the shaman walks a path of healing and guidance. They draw upon the raw energy of the land, harnessing the power of the elements to mend wounds and offer solace to their comrades. With each step, they carry the weight of the tribe's hopes and dreams, serving as a beacon of hope and a conduit for spiritual energy.",
+					"Their healing aura emanates a soothing light, suffusing the battlefield with revitalizing energies. Allies find renewed strength in their presence, their injuries closing swiftly under the shaman's gentle touch. With each whispered chant and flicker of their staff, the shaman calls upon the spirits, weaving the threads of the ethereal realm into a tapestry of restoration.",
+					"While their focus lies primarily on healing, the shaman is not defenseless. When threatened, they can wield their staff with surprising agility or unleash bolts of spiritual energy to ward off attackers. Yet, it is their unwavering dedication to aiding others that defines them, for their true power lies in the art of mending and rejuvenation.",
+					"The Yal'Kor Shaman, a bridge between the physical and spiritual, offers not only healing to their tribe but also guidance in times of uncertainty. Their presence brings comfort and reassurance, and their words carry the weight of ancient wisdom. In the heart of battle or during quiet moments of reflection, the shaman's connection to the sacred powers of the world shines through, reminding all that they are not alone in their journey through life."
+				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1120360386261176320/The_Heavenly_Yak-Suspended_Behemoth.jpeg"
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130153260485988504/YalKor_-_Sharman.jpg"
 						}
 					}
 				]
-			}
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130153260733435924/YalKor_-_Sharman.png"
+		},
+		{
+			"name": "Tourist Hunter Group",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "4d8 + 12",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"passive": 13,
+			"cr": "3",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+3",
+				"persuasion": "+4",
+				"survival": "+3"
+			},
+			"trait": [
+				{
+					"name": "Group Token",
+					"entries": [
+						"The Tourist Hunter Group functions as a group token, representing 4 hunters. This allows them to act simultaneously and simplifies the turn order and battle map."
+					]
+				},
+				{
+					"name": "Riches and Resources",
+					"entries": [
+						"The Tourist Hunter Group is well-equipped and carries the finest hunting gear available. They have advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Pay to Play",
+					"entries": [
+						"The Tourist Hunter Group may attempt to resolve conflicts through financial means, offering bribes or negotiating deals. They have advantage on Persuasion checks when attempting to resolve situations through monetary means."
+					]
+				},
+				{
+					"name": "Fashionable Hunters",
+					"entries": [
+						"The Tourist Hunter Group wears stylish attire, favoring Aloha Armor shirts and shorts over traditional hunting gear."
+					]
+				},
+				{
+					"name": "Hunting Bow with High-Power Optic",
+					"entries": [
+						"The Tourist Hunter Group wields Hunting Bows equipped with high-power optics, allowing them to shoot at maximum range without suffering disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Arrow Specializations",
+					"entries": [
+						"The Tourist Hunter Group carries different types of arrows to suit various combat situations. They have access to four types of specialized arrows: Blast, Lethal, Precision, and Chaos."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tourist Hunter Group makes four attacks, one for each member, only the first attack of the multiattack can be a specialization arrow."
+					]
+				},
+				{
+					"name": "Hunting Bow with High-Power Optic",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage. This bow is a +1 magical weapon and allows shooting at maximum range without suffering disadvantage."
+					]
+				},
+				{
+					"name": "Blast Arrows",
+					"entries": [
+						"These arrows explode upon impact, dealing damage to targets within a small area. On a hit, the primary target takes full damage, while creatures within a 10-foot radius must make a {@dc 14} Dexterity saving throw, taking half damage on a failed save."
+					]
+				},
+				{
+					"name": "Lethal Arrows",
+					"entries": [
+						"These arrows are designed to cause maximum harm, adding an extra {@damage 1d6} piercing damage on a successful hit."
+					]
+				},
+				{
+					"name": "Precision Arrows",
+					"entries": [
+						"These arrows are meticulously crafted for accuracy, granting a +2 bonus to the attack roll."
+					]
+				},
+				{
+					"name": "Chaos Arrows",
+					"entries": [
+						"These arrows are enchanted with unpredictable magic, creating a variety of unexpected effects upon impact. The target must succeed on a {@dc 14} saving throw or be affected by one of the following effects:",
+						"Confusion: The target becomes disoriented and has disadvantage on attack rolls and ability checks for 1 minute. The target can repeat the saving throw at the end of each of its turns to end the effect.",
+						"Stun: The target is {@condition stunned} and unable to take actions or reactions for 1 minute. The target can repeat the saving throw at the end of each of its turns to end the effect.",
+						"Slow: The target's speed is halved, and it has disadvantage on Dexterity saving throws for 1 minute. The target can repeat the saving throw at the end of each of its turns to end the effect.",
+						"Fear: The target becomes {@condition frightened} and must use its movement to move away from the source of fear. The target can repeat the saving throw at the end of each of its turns to end the effect.",
+						"Blindness: The target becomes {@condition blinded} and has disadvantage on attack rolls and ability checks that rely on vision for 1 minute. The target can repeat the saving throw at the end of each of its turns to end the effect.",
+						"Silence: The target is unable to speak, and any verbal spells it attempts to cast fail for 1 minute. The target can repeat the saving throw at the end of each of its turns to end the effect."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"stunned"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"fluff": {
+				"entries": [
+					"The Tourist Hunter Group is a band of wealthy thrill-seekers who have embarked on a grand adventure. These well-heeled hunters are known for their extravagant lifestyles and their penchant for pursuing rare trophies across the realm. Clad in fashionable attire that defies traditional hunting garb, they don fantasy Hawaiian shirts and shorts, making a bold statement of their opulence and distinct style.",
+					"Equipped with the finest hunting gear money can buy, the Tourist Hunter Group spares no expense in acquiring the most exquisite and meticulously crafted weapons. Their Hunting Bows, enhanced with high-power optics, allow them to strike with unerring precision even at extreme distances, providing a competitive edge in their pursuit of elusive prey. Each arrow they loose from their bows has been carefully chosen for its specific purpose, ensuring they are always ready for any challenge that may arise.",
+					"Within their arsenal, they carry specialized arrows that cater to different combat scenarios. The Blast Arrows, when unleashed, create explosive bursts upon impact, wreaking havoc on their targets and those unfortunate enough to be in the vicinity. The Lethal Arrows are designed for maximum damage, allowing the Tourist Hunter Group to strike with deadly force. Precision Arrows, meticulously crafted with exceptional accuracy in mind, grant the hunters an edge in hitting their mark. The Chaos Arrows, enchanted with unpredictable magic, introduce an element of unpredictability, inflicting various captivating effects on their targets, ranging from confusion to stunning or even instilling fear.",
+					"Not only do their exceptional abilities make them formidable foes, but their wealth and resources also grant them an advantage when it comes to negotiations and conflict resolution. The Tourist Hunter Group is no stranger to using their financial power to sway situations in their favor, often attempting to buy their way out of trouble or negotiate deals with their adversaries.",
+					"Accompanying their extravagant lifestyle is the magical Aloha Armor they don. When activated, this enchanting Hawaiian shirt transforms the surroundings into a tropical paradise, complete with swaying palm trees, gentle ocean breezes, and the soothing sounds of waves crashing upon the shore. Within this sanctuary, they find respite from charm and fear effects, allowing them to maintain their composure and navigate dangerous situations with grace.",
+					"With their combined skills, opulent resources, and a burning desire for adventure, the Tourist Hunter Group is always ready to face any challenge head-on. Whether it's tracking mythical creatures or securing legendary trophies, they are a force to be reckoned with, leaving their mark on the realm with style, sophistication, and a touch of chaos."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149728634548224/Tourists_-_Hunters.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149730593275944/Tourists_-_Hunters.png"
 		}
 	]
 }
