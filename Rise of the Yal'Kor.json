@@ -1774,6 +1774,566 @@
 				]
 			},
 			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149730593275944/Tourists_-_Hunters.png"
+		},
+		{
+			"name": "Yal'Kor Siege Ballista",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "10d10",
+				"average": 55
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "0",
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Siege Weapon",
+					"entries": [
+						"The Yal'Kor Siege Ballista is a formidable stationary siege engine. It cannot move and attack in the same turn."
+					]
+				},
+				{
+					"name": "Reinforced Construction",
+					"entries": [
+						"The Siege Ballista has sturdy and durable construction, granting it resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons."
+					]
+				},
+				{
+					"name": "Operator Dependent",
+					"entries": [
+						"The Siege Ballista requires an operator to function effectively. The operator is a separate entity with its own hit points. If the operator is killed, the Siege Ballista becomes inoperable until a new operator takes control."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ballista Shot",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}20 ({@damage 3d10+4}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130201861241188494/YalKor_Siege_Ballista.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130201860893065276/YalKor_Siege_Ballista.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Siege Ballista Operator (Yalk'Kor)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"passive": 13,
+			"cr": "2",
+			"languages": [
+				"Yalkorin"
+			],
+			"skill": {
+				"survival": "+3",
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Siege Ballista Operator",
+					"entries": [
+						"The Yal'Kor Siege Ballista Operator is skilled in operating the siege ballista, enabling the siege engine to unleash devastating attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Repair",
+					"entries": [
+						"The operator uses their action to repair the Siege Ballista. The Siege Ballista regains 10 hit points."
+					]
+				},
+				{
+					"name": "Assist",
+					"entries": [
+						"The operator can use their action to assist the Siege Ballista Operator. The Siege Ballista Operator gains advantage on their next attack roll made with the Siege Ballista."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130203066029838416/Siege_Ballista_Operator_YalkKor.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130203066554130483/Siege_Ballista_Operator_YalkKor.png"
+		},
+		{
+			"name": "Horseback Archers (Yal'Kor)",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Yal'Kor)"
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Studded Leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 49
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": 13,
+			"cr": "2",
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"languages": [
+				"Yal'Korin",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Group Token",
+					"entries": [
+						"The Yal'Kor Scout Horse Rider Group functions as a group token, representing 3 riders. This allows them to act simultaneously and simplifies the turn order and battle map."
+					]
+				},
+				{
+					"name": "Swift Movement",
+					"entries": [
+						"The Scout Horse Riders have a speed of 60 feet, enabling them to traverse the battlefield swiftly and maintain distance from melee attacks."
+					]
+				},
+				{
+					"name": "Mounted Assault",
+					"entries": [
+						"Once per turn, if a scout moves at least 20 feet in a straight line toward a target, it gains advantage on its next ranged attack roll against that target."
+					]
+				},
+				{
+					"name": "Coordinated Assault",
+					"entries": [
+						"If one scout hits a creature with a ranged attack, the next scout to attack the same creature gains a +2 bonus to their attack roll against that creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Yal'Kor Scout Horse Rider Group makes three attacks: one with their Longbow each."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"RNG"
+			],
+			"bonus": [
+				{
+					"name": "Agile Maneuver",
+					"entries": [
+						"The Scout Horse Riders can use a bonus action to take the Dash or Disengage action"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Evasive Shot",
+					"entries": [
+						"When a Scout Horse Rider is targeted by a ranged attack, it can use its reaction to impose disadvantage on the attack roll."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The Yal'Kor Scout Horse Rider Group emerges from the mist, their dark grey yak fur attire blending seamlessly with the shadows. Mounted atop their agile horses, they appear as swift specters, ready to unleash a hailstorm of arrows upon their unsuspecting targets. With bows held firmly in hand, their steeds carry them with grace and precision across the battlefield.",
+					"Their attire, made from the resilient and warm yak fur, provides them with protection from the elements while also aiding in their stealthy movements. The group's expertise lies in their ability to swiftly navigate the treacherous terrains of the land, combining the agility of their mounts with their keen archery skills.",
+					"As they ride, their bows become extensions of their beings, effortlessly drawing and releasing arrows with practiced precision. Each rider takes aim with unwavering focus, taking advantage of their dark grey attire to blend into the shadows and strike from unexpected angles.",
+					"With calculated coordination, the Yal'Kor Scout Horse Rider Group orchestrates their attacks, relying on their swift movements and collective prowess to confound and overwhelm their adversaries. Their skillful horsemanship, coupled with their mastery of the bow, allows them to deliver devastating volleys of arrows while always maintaining a safe distance from their foes.",
+					"Their allegiance to the yaks, creatures native to their homelands, is evident in their choice of fur attire. It serves as a reminder of the resilience and adaptability they possess as nomadic hunters on the rugged plains. They are a formidable force, embodying the spirit of their people and the untamed nature of their homeland.",
+					"In the heat of battle, the Yal'Kor Scout Horse Rider Group becomes an elusive and deadly force, striking swiftly and vanishing into the horizon as if they were never there. Their dark grey yak fur garments, horses, and bows have become symbols of their unity and proficiency, signifying their unwavering commitment to their nomadic way of life.",
+					"Beware the shadowed figures on horseback, for they are the Yal'Kor Scout Horse Rider Group, swift hunters of the steppe, whose arrows find their mark with unerring precision, leaving their enemies in awe and their allies inspired by their relentless pursuit of victory."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130251398383157338/Horseback_Archers_YalKor.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130251398701908140/Horseback_Archers_YalKor.png"
+		},
+		{
+			"name": "Horseback Archer Commander (Yal'Kor)",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"chain shirt"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 14,
+			"cha": 16,
+			"passive": 15,
+			"cr": "5",
+			"languages": [
+				"Yal'Korin",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"persuasion": "+6"
+			},
+			"trait": [
+				{
+					"name": "Commanding Presence",
+					"entries": [
+						"The commander has advantage on Charisma (Persuasion) checks made to interact with Yal'Kor units."
+					]
+				},
+				{
+					"name": "Disciplined Unit",
+					"entries": [
+						"Yal'Kor horseback archers within 60 feet of the commander act simultaneously on the commander's turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Change Stance",
+					"entries": [
+						"The commander can issue orders to his men, commanding them to change their stance. The Yal'Kor horseback archers within 60 feet can choose one of the following stances as a bonus action:"
+					]
+				},
+				{
+					"name": "Attack Stance",
+					"entries": [
+						"While in this stance, the Yal'Kor horseback archers gain a +2 bonus to their attack rolls."
+					]
+				},
+				{
+					"name": "Defense Stance",
+					"entries": [
+						"While in this stance, the Yal'Kor horseback archers gain a +2 bonus to their Armor Class."
+					]
+				},
+				{
+					"name": "Speed Stance",
+					"entries": [
+						"While in this stance, the Yal'Kor horseback archers' movement speed increases by 10 feet."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Evasive Maneuver",
+					"entries": [
+						"When the commander is targeted by a melee attack, it can use its reaction to impose disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The commander makes two attacks: one with its longbow and one with its shortsword."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130257433793667224/Horseback_Archer_Commander_YalKor.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130257434049515711/Horseback_Archer_Commander_YalKor.png"
+		},
+		{
+			"name": "Archer Alchemist (Yal'Kor)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Yal'Kor)"
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"leather armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 10,
+			"passive": 13,
+			"cr": "4",
+			"languages": [
+				"Yal'Korin",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+6",
+				"int": "+5"
+			},
+			"skill": {
+				"medicine": "+3",
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Alchemical Arsenal",
+					"entries": [
+						"The archer alchemist can use a bonus action to draw or stow an alchemical vial. When using a potion or vial, the archer alchemist can do so as part of an attack or the Use an Object action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage. With the affect from one potion vial."
+					]
+				},
+				{
+					"name": "Explosive Shot",
+					"entries": [
+						"The archer alchemist can make a ranged attack using a vial filled with explosive potion instead of a regular attack. On a hit, the target takes {@damage 3d6} fire damage and creatures within 5 feet of the target must make a {@dc 14} Dexterity saving throw, taking half damage on a success."
+					]
+				},
+				{
+					"name": "Healing Shot",
+					"entries": [
+						"The archer alchemist can make a ranged attack using a vial filled with healing potion instead of a regular attack. On a hit, the target regains {@dice 3d6 + 4} hit points."
+					]
+				},
+				{
+					"name": "Smoke Bomb",
+					"entries": [
+						"The archer alchemist can throw a smoke bomb as a bonus action. The smoke bomb creates a 20-foot radius sphere of dense smoke centered on a point within 30 feet of the alchemist. The area is heavily obscured and blocks line of sight until the end of the alchemist's next turn."
+					]
+				},
+				{
+					"name": "Acidic Flask",
+					"entries": [
+						"The archer alchemist can throw an acidic flask as a ranged attack. On a hit, the target takes {@damage 2d6} acid damage and must succeed on a {@dc 14} Dexterity saving throw or have its AC reduced by 2 for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Teleportation Arrow",
+					"entries": [
+						"The archer alchemist fires a specialized arrow imbued with teleportation magic. When the arrow impacts an object, the alchemist teleports to the location of impact as a bonus action. The alchemist can use the teleportation arrow as part of an attack or the Use an Object action."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"AOE"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130264061871927427/Archer_Alchemist_YalKor.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1130264061511208960/Archer_Alchemist_YalKor.jpg"
+						}
+					}
+				]
+			}
 		}
 	]
 }
