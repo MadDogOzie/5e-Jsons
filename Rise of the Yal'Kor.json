@@ -2334,6 +2334,76 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Ballista",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				},
+				"tags": [
+					{
+						"tag": "Weapon",
+						"prefix": "Siege"
+					}
+				]
+			},
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "10d10",
+				"average": 55
+			},
+			"speed": {},
+			"passive": 10,
+			"cr": "4",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Bolt",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) damage."
+					]
+				},
+				{
+					"name": "Loading",
+					"entries": [
+						"It takes one action to load the ballista."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1135954682074890240/Ballista.png"
 		}
 	]
 }
