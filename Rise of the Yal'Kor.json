@@ -105,7 +105,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "6745fb16-d887-4a76-b464-5b0cc035bf4a"
 		},
 		{
 			"name": "Zhar'Dak Snow Leopard",
@@ -201,7 +202,8 @@
 			],
 			"environment": [
 				"mountain"
-			]
+			],
+			"uniqueId": "c9eb6ce1-4335-467e-ae6d-eb462d67a0ba"
 		},
 		{
 			"name": "Undead Yak",
@@ -319,7 +321,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "0006eadc-ae3b-426c-8863-4de9e98b571d"
 		},
 		{
 			"name": "Yal'Kor Scout",
@@ -418,7 +421,8 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015566950440/Scout_Riders_-_Rider.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1105125015566950440/Scout_Riders_-_Rider.png",
+			"uniqueId": "76c8127b-153a-46f8-b532-a1468833e92e"
 		},
 		{
 			"name": "Yal'Kor Skeleton Archer",
@@ -505,7 +509,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "b0cb284d-3669-46f5-9cc6-68c6a3265076"
 		},
 		{
 			"name": "Yal'Kor Skeleton Guard",
@@ -614,7 +619,8 @@
 			],
 			"conditionInflict": [
 				"prone"
-			]
+			],
+			"uniqueId": "66ce398a-1d98-45d6-83c9-a7e36f2f69ce"
 		},
 		{
 			"name": "Durak the Undying",
@@ -792,7 +798,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "236290de-b181-4f30-bbb5-85e72174d7d6"
 		},
 		{
 			"name": "Ghost Yak Stampede",
@@ -883,7 +890,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "3122d241-793b-46f5-9f37-16f4de498a2e"
 		},
 		{
 			"name": "Spectral Yak",
@@ -982,7 +990,8 @@
 			],
 			"conditionInflict": [
 				"prone"
-			]
+			],
+			"uniqueId": "f2168403-a0ab-4d09-b391-b2d5fdd673bb"
 		},
 		{
 			"name": "Yakstronaut",
@@ -1108,7 +1117,8 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149731050467459/Yakstronaut.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149731050467459/Yakstronaut.png",
+			"uniqueId": "5df6f4d3-6d5b-44b8-af21-34f908c49967"
 		},
 		{
 			"name": "Refugee (Yal'Kor)",
@@ -1223,7 +1233,8 @@
 						"The Yal'Kor Refugee function as a group token, representing 5 Yal'Kor Refugee. This allows them to act simultaneously and simplifies the turn order and battle map."
 					]
 				}
-			]
+			],
+			"uniqueId": "03b94d66-2dfa-41e6-ade3-98180c5a26ff"
 		},
 		{
 			"name": "Townsfolk (Yal'Kor)",
@@ -1349,7 +1360,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "05d32c3c-a5b4-4b63-a8db-28e1e0606ae5"
 		},
 		{
 			"name": "Scout Trio (Yal'Kor)",
@@ -1475,7 +1487,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "21389abf-3109-4776-baec-9f59d42b525f"
 		},
 		{
 			"name": "Shaman (Yal'Kor)",
@@ -1616,7 +1629,8 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130153260733435924/YalKor_-_Sharman.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130153260733435924/YalKor_-_Sharman.png",
+			"uniqueId": "9b8948df-447f-4261-9200-6ef842c5f998"
 		},
 		{
 			"name": "Tourist Hunter Group",
@@ -1773,7 +1787,8 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149730593275944/Tourists_-_Hunters.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130149730593275944/Tourists_-_Hunters.png",
+			"uniqueId": "ca16d59a-8568-4fd1-a6a1-a22fe55bc8c4"
 		},
 		{
 			"name": "Yal'Kor Siege Ballista",
@@ -1853,7 +1868,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "24e18ff5-8b45-4387-be7e-df67a3adb624"
 		},
 		{
 			"name": "Siege Ballista Operator (Yalk'Kor)",
@@ -1935,7 +1951,8 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130203066554130483/Siege_Ballista_Operator_YalkKor.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130203066554130483/Siege_Ballista_Operator_YalkKor.png",
+			"uniqueId": "865e6680-c807-4890-a131-a1bbb4eeef07"
 		},
 		{
 			"name": "Horseback Archers (Yal'Kor)",
@@ -2070,7 +2087,8 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130251398701908140/Horseback_Archers_YalKor.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130251398701908140/Horseback_Archers_YalKor.png",
+			"uniqueId": "f1c43c7d-5eb6-41e0-8a1b-3a56c6a4bb1c"
 		},
 		{
 			"name": "Horseback Archer Commander (Yal'Kor)",
@@ -2210,7 +2228,8 @@
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130257434049515711/Horseback_Archer_Commander_YalKor.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1130257434049515711/Horseback_Archer_Commander_YalKor.png",
+			"uniqueId": "acf22cb4-fe92-4417-90af-04077a6103e1"
 		},
 		{
 			"name": "Archer Alchemist (Yal'Kor)",
@@ -2333,7 +2352,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "ba257d75-a4a3-4ea7-83d9-8c3745b27d28"
 		},
 		{
 			"name": "Ballista",
@@ -2403,7 +2423,100 @@
 			"miscTags": [
 				"RW"
 			],
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1135954682074890240/Ballista.png"
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1135954682074890240/Ballista.png",
+			"uniqueId": "40a40a73-b849-480a-b6fc-f6419c376708"
+		},
+		{
+			"uniqueId": "50904c1d-abd0-4771-81b6-19b31a5914fd",
+			"name": "Yak",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "RiseoftheYalKor",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "5d10 + 15",
+				"average": 42
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"passive": 12,
+			"cr": "1",
+			"skill": {
+				"perception": "+2"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The yak makes two attacks: one with its Ram and one with its Hooves."
+					]
+				},
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the yak moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@damage 2d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1136685838797906032/Yak.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1136685838487539813/Yak.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"grassland",
+				"hill"
+			]
 		}
 	]
 }
