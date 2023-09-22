@@ -1,1 +1,360 @@
 
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CastorCity",
+				"abbreviation": "G01S02",
+				"full": "Castor City",
+				"url": "https://raw.githubusercontent.com/MadDogOzie/Chronicles-of-Terradome/main/Castor%20City.json",
+				"authors": [
+					"Austin McGrath"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"monster": [
+		{
+			"uniqueId": "2576d408-6a24-4a6a-994d-0f789e3954d8",
+			"name": "Castor Chitinous (Head)",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "CastorCity",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Scales"
+					]
+				},
+				{
+					"ac": 15,
+					"condition": "when in direct sunlight"
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 33",
+				"average": 93
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 5,
+			"wis": 11,
+			"cha": 5,
+			"passive": 10,
+			"cr": "0",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915729002507/Head.png",
+			"environment": [
+				"underdark"
+			],
+			"group": [
+				"Castor Chitinous"
+			],
+			"senses": [
+				"tremorsense 120 ft.",
+				"darkvision 10 ft."
+			],
+			"senseTags": [
+				"T",
+				"D"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Swift Predator",
+					"entries": [
+						"When Castor Chitinous grapples a target or holds prey in its mandibles, its speed is increased by 10ft, and it releases a noxious gas that surrounds it, preventing opportunity attacks until it releases the grapple or consumes its prey."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"Castor Chitinous makes three attacks: two with its mandibles and one with its stinger if the target is {@condition grappled} by its mandibles."
+					]
+				},
+				{
+					"name": "Mandibles",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6+4}) slashing damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 14}). Until the grapple ends, the target is {@condition restrained}, and Castor Chitinous can't use its mandibles on another target."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage. and the target must make a {@dc 13} Constitution saving throw. On a failed save, the target is {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Swallow (Paralyzed Grappled Target)",
+					"entries": [
+						"Castor Chitinous makes one attack against a Medium or smaller creature that is both {@condition paralyzed} and {@condition grappled}, the target is swallowed. The swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside Castor Chitinous, and it takes 10 ({@damage 3d6}) acid damage at the start of each of Castor Chitinous's turns. If Castor Chitinous takes 10 or more damage in a single turn from a creature inside it, it must succeed on a {@dc 18} Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls {@condition prone} in a space within 10 feet of Castor Chitinous. If Castor Chitinous dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 30 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"paralyzed",
+				"restrained"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"uniqueId": "e634e8ad-697b-4227-a45f-d47e306c9290",
+			"name": "Castor Chitinous (Thorax)",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				}
+			},
+			"source": "CastorCity",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Scales"
+					]
+				},
+				{
+					"ac": 16,
+					"condition": "when in direct sunlight"
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 16",
+				"average": 38
+			},
+			"speed": {},
+			"passive": 10,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915087265842/Thorax.png",
+			"environment": [
+				"underdark"
+			],
+			"group": [
+				"Castor Chitinous"
+			],
+			"str": 19,
+			"dex": 10,
+			"con": 19,
+			"int": 5,
+			"wis": 11,
+			"cha": 5,
+			"action": [
+				{
+					"name": "Kick",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage. The target must make a {@dc 16} Dex save or be knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"uniqueId": "af13bdb3-6d7c-4fd7-98a4-91ff309431d9",
+			"name": "Castor Chitinous (Abdomen)",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				}
+			},
+			"source": "CastorCity",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Scales"
+					]
+				},
+				{
+					"ac": 16,
+					"condition": "when in direct sunlight"
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 12",
+				"average": 34
+			},
+			"speed": {},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 5,
+			"wis": 11,
+			"cha": 5,
+			"passive": 0,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007914835615855/Abdomen.png",
+			"environment": [
+				"underdark"
+			],
+			"group": [
+				"Castor Chitinous"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Venomous Spines",
+					"entries": [
+						"{@atk rw} {@hit 0} to hit, range 60/120 ft., one target. {@h}5 ({@damage 2d6}) damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			]
+		},
+		{
+			"uniqueId": "16cc3c85-f78d-4a6c-bdb6-8f8087469fb3",
+			"name": "Castor Chitinous (Tail)",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				}
+			},
+			"source": "CastorCity",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Scales"
+					]
+				},
+				{
+					"ac": 16,
+					"condition": "when in direct sunlight"
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 12",
+				"average": 34
+			},
+			"speed": {},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 5,
+			"wis": 11,
+			"cha": 5,
+			"passive": 10,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915456385044/Tail.png",
+			"environment": [
+				"underdark"
+			],
+			"group": [
+				"Castor Chitinous"
+			],
+			"action": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"damageTags": [
+				"B"
+			]
+		}
+	]
+}
