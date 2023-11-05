@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1699177431,
-		"dateLastModified": 1699177431
+		"dateAdded": 1699178269,
+		"dateLastModified": 1699178269
 	},
 	"monster": [
 		{
@@ -524,6 +524,175 @@
 						"href": {
 							"type": "external",
 							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1170659596269010944/9897235a-a798-41a0-b030-7da673c3e69e.jpg?ex=6559d8b5&is=654763b5&hm=1cbe331a6611ae092af66b48db12e55cb3f7808995823042bd9baf79371b0e87&"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Solotov Hearthfire",
+			"source": "CastorCity",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"castor"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Fine Clothes"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 18,
+			"skill": {
+				"insight": "+3",
+				"persuasion": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Sylvan",
+				"Dwarvish",
+				"Castor"
+			],
+			"cr": "0",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Solotov Hearthfire is a 6th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). He has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell command}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Noble Presence",
+					"entries": [
+						"Solotov Hearthfire can use his presence and charisma to inspire those around him. All friendly creatures within 30 feet of Solotov Hearthfire gain advantage on their next saving throw or attack roll. This ability can be used once per long rest."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Solotov Hearthfire makes two melee attacks"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+					]
+				},
+				{
+					"name": "Leadership {@recharge 5}",
+					"entries": [
+						"For 1 minute, Solotov Hearthfire can inspire his allies with a rousing speech or gesture. Each friendly creature within 30 feet of Solotov Hearthfire can add a {@dice d4} to their attack rolls and saving throws. Additionally, Solotov Hearthfire can command one creature to make a melee or ranged attack as a reaction. This ability can be used once per short rest."
+					]
+				},
+				{
+					"name": "Call Guards (1/Day)",
+					"entries": [
+						"Solotov Hearthfire can call for the assistance of the Miners Guild's guards. Within {@dice 1d4} rounds, {@dice 1d4 + 1} loyal guards arrive at Solotov Hearthfire's location, ready to defend or take on any task."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Solotov Hearthfire adds 2 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1170661580233515049/token_11.png?ex=6559da8e&is=6547658e&hm=50579900df60677e869a19cf3d00c622ee7dc203c784b2799c796399887dd9df&",
+			"attachedItems": [
+				"dagger|phb",
+				"rapier|phb"
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1170661579944116305/dd0e165b-d1b2-485f-b11a-1fd57872b556.jpg?ex=6559da8e&is=6547658e&hm=7a9947b53cb96429ccbce896c83ca0b08fe3ffa1a568e21a8df5c73cc6c2cb41&"
 						}
 					}
 				]
