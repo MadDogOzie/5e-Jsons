@@ -1,5 +1,5 @@
-
 {
+	"siteVersion": "1.187.1",
 	"_meta": {
 		"sources": [
 			{
@@ -12,17 +12,90 @@
 				],
 				"convertedBy": []
 			}
-		]
+		],
+		"dateAdded": 1699177431,
+		"dateLastModified": 1699177431
 	},
 	"monster": [
 		{
-			"uniqueId": "2576d408-6a24-4a6a-994d-0f789e3954d8",
+			"name": "Castor Chitinous (Abdomen)",
+			"group": [
+				"Castor Chitinous"
+			],
+			"source": "CastorCity",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				}
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Scales"
+					]
+				},
+				{
+					"ac": 16,
+					"condition": "when in direct sunlight"
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 12",
+				"average": 34
+			},
+			"speed": {},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 5,
+			"wis": 11,
+			"cha": 5,
+			"passive": 0,
+			"action": [
+				{
+					"name": "Venomous Spines",
+					"entries": [
+						"{@atk rw} {@hit 0} to hit, range 60/120 ft., one target. {@h}5 ({@damage 2d6}) damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007914835615855/Abdomen.png",
+			"damageTagsSpell": [
+				"O"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Castor Chitinous (Head)",
+			"group": [
+				"Castor Chitinous"
+			],
+			"source": "CastorCity",
 			"size": [
 				"L"
 			],
 			"type": "beast",
-			"source": "CastorCity",
 			"alignment": [
 				"N"
 			],
@@ -51,40 +124,18 @@
 			"int": 5,
 			"wis": 11,
 			"cha": 5,
-			"passive": 10,
-			"cr": "0",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915729002507/Head.png",
-			"environment": [
-				"underdark"
-			],
-			"group": [
-				"Castor Chitinous"
-			],
 			"senses": [
 				"tremorsense 120 ft.",
 				"darkvision 10 ft."
 			],
-			"senseTags": [
-				"T",
-				"D"
-			],
+			"passive": 10,
 			"immune": [
 				"poison"
 			],
 			"conditionImmune": [
 				"poisoned"
 			],
+			"cr": "0",
 			"trait": [
 				{
 					"name": "Swift Predator",
@@ -119,6 +170,22 @@
 					]
 				}
 			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915729002507/Head.png",
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"P",
+				"S"
+			],
 			"miscTags": [
 				"MW",
 				"RCH"
@@ -129,21 +196,27 @@
 				"paralyzed",
 				"restrained"
 			],
-			"actionTags": [
-				"Swallow"
-			],
-			"damageTags": [
-				"A",
-				"P",
-				"S"
-			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+						}
+					}
+				]
+			}
 		},
 		{
-			"uniqueId": "e634e8ad-697b-4227-a45f-d47e306c9290",
-			"name": "Castor Chitinous (Thorax)",
+			"name": "Castor Chitinous (Tail)",
+			"group": [
+				"Castor Chitinous"
+			],
+			"source": "CastorCity",
 			"size": [
 				"L"
 			],
@@ -152,7 +225,76 @@
 					"choose": []
 				}
 			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Scales"
+					]
+				},
+				{
+					"ac": 16,
+					"condition": "when in direct sunlight"
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 12",
+				"average": 34
+			},
+			"speed": {},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 5,
+			"wis": 11,
+			"cha": 5,
+			"passive": 10,
+			"action": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915456385044/Tail.png",
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Castor Chitinous (Thorax)",
+			"group": [
+				"Castor Chitinous"
+			],
 			"source": "CastorCity",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				}
+			},
 			"alignment": null,
 			"ac": [
 				{
@@ -171,31 +313,13 @@
 				"average": 38
 			},
 			"speed": {},
-			"passive": 10,
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915087265842/Thorax.png",
-			"environment": [
-				"underdark"
-			],
-			"group": [
-				"Castor Chitinous"
-			],
 			"str": 19,
 			"dex": 10,
 			"con": 19,
 			"int": 5,
 			"wis": 11,
 			"cha": 5,
+			"passive": 10,
 			"action": [
 				{
 					"name": "Kick",
@@ -204,6 +328,13 @@
 					]
 				}
 			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915087265842/Thorax.png",
+			"damageTags": [
+				"B"
+			],
 			"miscTags": [
 				"MW",
 				"RCH"
@@ -211,47 +342,6 @@
 			"conditionInflict": [
 				"prone"
 			],
-			"damageTags": [
-				"B"
-			]
-		},
-		{
-			"uniqueId": "af13bdb3-6d7c-4fd7-98a4-91ff309431d9",
-			"name": "Castor Chitinous (Abdomen)",
-			"size": [
-				"L"
-			],
-			"type": {
-				"type": {
-					"choose": []
-				}
-			},
-			"source": "CastorCity",
-			"alignment": null,
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"Scales"
-					]
-				},
-				{
-					"ac": 16,
-					"condition": "when in direct sunlight"
-				}
-			],
-			"hp": {
-				"formula": "4d10 + 12",
-				"average": 34
-			},
-			"speed": {},
-			"str": 19,
-			"dex": 10,
-			"con": 16,
-			"int": 5,
-			"wis": 11,
-			"cha": 5,
-			"passive": 0,
 			"fluff": {
 				"images": [
 					{
@@ -262,99 +352,182 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007914835615855/Abdomen.png",
-			"environment": [
-				"underdark"
+			}
+		},
+		{
+			"name": "Castor Warlock Assassin",
+			"source": "CastorCity",
+			"size": [
+				"M"
 			],
-			"group": [
-				"Castor Chitinous"
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Leather Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"skill": {
+				"stealth": "+7",
+				"deception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Sylvan",
+				"Castor"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The warlock assassin beaver is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). It has the following warlock spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell darkness}",
+								"{@spell hex}"
+							],
+							"slots": 4,
+							"lower": 1
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell mirror image}"
+							],
+							"slots": 3,
+							"lower": 1
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell hunger of Hadar}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Beaver Nature",
+					"entries": [
+						"The warlock assassin beaver can communicate with beavers and other creatures of the forest, even when they don't share a language."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The warlock assassin beaver makes two attacks with its Eldritch Dagger."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Eldritch Dagger",
+					"entries": [
+						"The Eldritch Dagger is a sleek, enchanted weapon made of darkwood, imbued with eldritch energy. When it attacks, the dagger's blade shimmers with a faint purplish hue, and the air around it seems to ripple as it cuts through the target.",
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage.",
+						"If the attack hits, the target takes an additional {@damage 2d6} necrotic damage, representing the eldritch energy coursing through the target's body."
+					]
+				},
+				{
+					"name": "Summon Shadow (1/Day)",
+					"entries": [
+						"The warlock assassin beaver summons a shadowy assassin to aid it in combat. The shadow has its own initiative and takes its turn immediately after the warlock assassin beaver. The summoned shadow has the statistics of a Shadow (MM 269) except it has the Eldritch Strike ability and is under the beaver's control. The shadow remains for up to 1 minute, until dismissed by the warlock assassin beaver, or until it is reduced to 0 hit points."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"When the warlock assassin beaver is subjected to an effect that requires a Dexterity saving throw to take half damage on a success, it can use its Evasion ability. The DC for this saving throw is equal to the attack roll. If the beaver succeeds on the Dexterity saving throw, it takes no damage instead of half damage."
+					]
+				}
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1170659595706966036/token_1.png?ex=6559d8b5&is=654763b5&hm=c26910f35e77d3dc5a0e501462945cc26aee750e6e5db9b747735b0b73e5cbe2&",
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"P"
 			],
 			"damageTagsSpell": [
+				"A",
+				"C",
+				"N",
 				"O"
 			],
-			"action": [
-				{
-					"name": "Venomous Spines",
-					"entries": [
-						"{@atk rw} {@hit 0} to hit, range 60/120 ft., one target. {@h}5 ({@damage 2d6}) damage."
-					]
-				}
+			"spellcastingTags": [
+				"CL"
 			],
 			"miscTags": [
-				"RW"
-			]
-		},
-		{
-			"uniqueId": "16cc3c85-f78d-4a6c-bdb6-8f8087469fb3",
-			"name": "Castor Chitinous (Tail)",
-			"size": [
-				"L"
+				"MLW",
+				"MW"
 			],
-			"type": {
-				"type": {
-					"choose": []
-				}
-			},
-			"source": "CastorCity",
-			"alignment": null,
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"Scales"
-					]
-				},
-				{
-					"ac": 16,
-					"condition": "when in direct sunlight"
-				}
+			"savingThrowForcedSpell": [
+				"dexterity"
 			],
-			"hp": {
-				"formula": "4d10 + 12",
-				"average": 34
-			},
-			"speed": {},
-			"str": 19,
-			"dex": 10,
-			"con": 16,
-			"int": 5,
-			"wis": 11,
-			"cha": 5,
-			"passive": 10,
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1154020271955640332/austin.png"
+							"url": "https://cdn.discordapp.com/attachments/1104719864570064936/1170659596269010944/9897235a-a798-41a0-b030-7da673c3e69e.jpg?ex=6559d8b5&is=654763b5&hm=1cbe331a6611ae092af66b48db12e55cb3f7808995823042bd9baf79371b0e87&"
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/1104719864570064936/1154007915456385044/Tail.png",
-			"environment": [
-				"underdark"
-			],
-			"group": [
-				"Castor Chitinous"
-			],
-			"action": [
-				{
-					"name": "Unarmed Strike",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
-					]
-				}
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"damageTags": [
-				"B"
-			]
+			}
 		}
 	]
 }
